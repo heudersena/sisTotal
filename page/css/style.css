@@ -1,0 +1,45 @@
+#containerprincipal{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#form-group{
+
+}
+
+input, #inp-ca_categoria{
+	height: 2.5em; 
+	text-transform: uppercase;
+	/* background: #900; */
+	
+}
+@media only screen and (max-width: 1000px) {
+   #inp-ca_categoria{
+   	max-width: 100%;
+   }
+}
+@media only screen and (max-width: 990px) {
+   #inp-ca_categoria{
+   	max-width: 70%;
+   }
+}
+@media only screen and (max-width: 750px) {
+   #inp-ca_categoria{
+   	background: #900;
+   	max-width: 100%;
+   }
+}
+
+
+#but-btnCategoria,#btn-link{
+	margin-top: 1.5em;
+	height: 2.5em;
+	border: none;
+
+
+}
+
+.tr-categoria{
+	background-color: #337ab7;
+	color:  #fff;
+}

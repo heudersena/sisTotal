@@ -1,5 +1,8 @@
 
-<?php echo "<a href='page/'>ir</a><br><hr>"; ?>
+<?php 
+header('location: page/ ');
+
+echo "<a href='page/'>ir</a><br><hr>"; ?>
 
 <?php 
 

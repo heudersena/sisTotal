@@ -12,7 +12,7 @@ try {
         print_r($_POST);
         echo "</pre>";
 
-        $sql = ("INSERT INTO link (li_link,li_descricao,fk_ca_categoria) VALUES (:ca_categoria,:li_descricao,:fk_ca_categoria)");
+        $sql = ("INSERT INTO link (li_link,li_descricao,fk_ca_categoria) VALUES (:li_link,:li_descricao,:fk_ca_categoria)");
         $stmt = $conn->prepare($sql);
         var_dump($stmt);
         echo "<br>";
@@ -22,8 +22,8 @@ try {
         $stmt->execute();
         if ($stmt == true) {
             echo "foi...";
-            // header('location: ../');
-            // die();
+            header('location: ../');
+            die();
         }else{
             echo "error";
             die();
